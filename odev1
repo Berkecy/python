@@ -1,0 +1,37 @@
+#soru 1
+Veri tipleri
+
+int: integer tam sayı
+ex: 
+  int = 3
+
+float: ondalıklı sayı
+ex:
+  float = 0.41
+
+string: metin tipi
+ex:
+  str = "dlnbrk"
+  
+Boolean: bir değerin sadece doğru olup olmadığını kontrol eden mekanizma
+ex:
+ x = 3 < 1
+ y = 5 > 3
+ print(x) => false
+ print(y) => true
+ 
+List: birden fazla değerin aynı kategoride belirtilmesidir
+ex:
+  List = [ 4 , 6 , 9.4 , "asd" ]
+  
+  #soru 2
+  
+  Kodlama.io'daki veri örnekleri:
+  Sitedeki yazıların tamamı string olarak ifade edilebilir; "Ödev tanımı, Amaç vs."
+  
+  
+  
+  
+  Kodlama.io'da veri örnekleri:
+Tüm yazılar string verisi olarak gösterilebilir, örneğin: Kurs Programı, Kurslarım
+"0% Tamamlandı" sayı içerdiği için çektiği veri integer olsa bile yazıyı dahil etmek için string bir veriye dönüşüyor
