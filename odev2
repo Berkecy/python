@@ -1,0 +1,49 @@
+students = []
+for index, students in enumerate(students, start = 1):
+    print(count, students)
+
+def add_student():
+    name = input("Enter student name: ")
+    students.append(name)
+    print(name, "added to the list.")
+
+def remove_student():
+    name = input("Enter student name to remove: ")
+    if name in students:
+        students.remove(name)
+        print(name, "removed from the list.")
+    else:
+        print(name, "is not in the list.")
+
+def print_students():
+    print("List of students:")
+    for i, name in enumerate(students):
+        print(i, "-", name)
+
+def get_student_name():
+    index = int(input("Enter student index: "))
+    name = students[index-1]
+    print(f"Student name: {name}\n")
+
+while True:
+    print("\n1 - Add student")
+    print("2 - Remove student")
+    print("3 - Print students")
+    print("4 - Get student name by index")
+    print("5 - Quit")
+    
+    choice = input("Enter your choice: ")
+    
+    if choice == "1":
+        add_student()
+    elif choice == "2":
+        remove_student()
+    elif choice == "3":
+        print_students()
+    elif choice == "4":
+        get_student_name()
+    elif choice == "5":
+        print("Goodbye!")    
+        break
+    else:
+        print("Invalid choice. Please try again.")
